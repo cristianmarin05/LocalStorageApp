@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 80px);
+    &__post{
+        width: 300px;
+        margin: 20px;
+        height: fit-content;
+        padding: 10px;
+        background-color: #f6f4e6;
+        border-radius: 10px;
+        &-close{
+            text-align: end;
+            svg{
+                width: 15px;
+                cursor: pointer;
+                &:hover{
+                    fill: red;
+                }
+            }
+        }
+        &-name{
+            font-weight: 600;
+            color: #cf7500;
+            p{
+                margin: 0;
+            }
+        }
+        &-msg{
+            color: #1A1C20;
+            font-weight: 600;
+
+        }
+        &-date{
+            text-align: end;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}
